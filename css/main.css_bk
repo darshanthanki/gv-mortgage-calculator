@@ -1,0 +1,633 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: url(../img/bg.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.top-container {
+	margin-bottom: 35px;
+}
+
+.top-container img {
+	max-width: 100px;
+
+	display: inline;
+	margin-top: 5px;
+}
+
+.top-container h1 {
+	color: #19CBD8;
+	font-size: 20px;
+	font-weight: 800;
+	display: inline;
+	margin-left: 10px;
+}
+
+.top-container p {
+	color: #d7e5e5;
+	font-size: 10px;
+	font-weight: 400;
+	margin-left: 46px;
+	margin-top: -14px;
+}
+
+.calc-container {
+	background: rgba(255,255,255,0.9);
+    border-radius: 7.5px;
+    margin-top: 100px;
+    padding: 40px 30px 60px 30px;
+    -webkit-box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.23);
+	-moz-box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.23);
+	box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.23);
+}
+
+@media (min-width: 992px) {
+	.results-col {
+		padding-left: 48px;
+	}
+}
+
+@media (max-width: 991px) {
+	.results-col {
+		margin-top: 60px;
+	}
+}		
+
+.results-col p {
+	color: #4E5552;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.inline {
+	display: inline;
+}
+
+.form-group label {
+	color: #b2b2b2;
+	font-size: 13px;
+	font-weight: 600;
+
+}
+
+.inner-form {
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 30px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.23);
+	-moz-box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.23);
+	box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.23);
+	background: -moz-linear-gradient(top, rgba(153,153,153,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(153,153,153,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(153,153,153,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00999999', endColorstr='#ffffff',GradientType=0 );
+}
+
+.form-control {
+    display: block !important;
+    height: auto !important;
+    width: 100% !important;
+    padding: 10px 10px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.5 !important;
+    color: #353535 !important;
+    background-color: white !important;
+    background-clip: padding-box !important;
+    border: 2px solid #f1f1f1 !important;
+    border-radius: 8px !important;
+    transition: border .25s ease-in-out !important;
+    box-shadow: none !important;
+}
+
+.form-control:focus {
+	box-shadow: none !important;
+	background-color: white !important;
+	outline: none;
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: 41px;
+}
+
+.btn {
+	background-color: #4974a5;
+    color: white !important;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 8px;
+    width: 100%;
+    padding: 12px 0;
+    transition: background-color .3s ease-in-out;
+    -webkit-box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.23);
+	-moz-box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.23);
+	box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.23);
+}
+
+.btn:hover {
+	background-color: #f75538;
+}
+
+a {
+	color: #ff9e80;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #f75538;
+	text-decoration: none;
+}
+
+.lcs_switch.lcs_on {
+    background: rgb(247, 85, 56);
+    box-shadow: 0 0 2px #c32307 inset;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+	top: -8px;
+    margin-left: -1.6em;
+    width: 44px;
+    height: 22px;
+    border-radius: 11px;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+.ui-slider-horizontal .ui-slider-handle span {
+	color: #b2b2b2;
+	font-weight: 400;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+	top: -1px;
+	height: calc(100% + 2px);
+	background-color: #e5e5e5;
+}
+
+#dti-slider .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+	background: #fff;
+}
+
+#dti-slider .ui-state-default,
+.ui-widget-content .ui-state-default {
+	background-color: #000;
+    border: 0;
+}
+
+#dti-slider .ui-state-active {
+	border: 0;
+}
+
+#dti-slider {
+	height: 6px;
+	border: 0;
+	background: rgb(249,232,89); /* Old browAsers */
+	background: -moz-linear-gradient(left, #d7e5e5 0%,  #ff9e80 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #d7e5e5 0%, #ff9e80 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #d7e5e5 0%, #ff9e80 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9e859', endColorstr='#ff9e80',GradientType=1 ); /* IE6-9 */
+	-webkit-box-shadow: 3px 6px 6px 0px rgba(0,0,0,0.23);
+	-moz-box-shadow: 3px 6px 6px 0px rgba(0,0,0,0.23);
+	box-shadow: 3px 6px 6px 0px rgba(0,0,0,0.23);
+}
+#conservative {
+	width: 50%;
+	float: left;
+	color: #000;
+}
+#aggressive {
+	width: 50%;
+	float: left;
+	text-align: right;
+	color: #000;
+}		
+#conservative p,
+#aggressive p {
+	color: #000;
+}
+.normal-text p {
+	color: #999;
+	font-size: 13px;
+	text-transform: none;
+	letter-spacing: 0;
+}
+.options-link {
+	font-size: 14px;
+	font-weight: 600;
+	color: #b2b2b2;
+	border-bottom: 1px dotted #b2b2b2;
+	text-decoration: none;
+}
+.options-link:hover,
+.options-link:focus {
+	color: #a2a2a2;
+	text-decoration: none;
+}
+.options-link:first-of-type {
+	margin-right: 10px;
+}
+.options-link.active {
+	color: #ff9e80;
+	border-bottom: 0;
+}
+.main-results-col .col-md-4:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 80%;
+	width: 4px;
+	border-radius: 3px;
+}
+.main-results-col .col-md-4:nth-of-type(1)::before {
+	background-color: #ff9e80;
+	-webkit-box-shadow: -4px 0px 10px 0px rgba(249,113,89,0.45);
+	-moz-box-shadow: -4px 0px 10px 0px rgba(249,113,89,0.45);
+	box-shadow: -4px 0px 10px 0px rgba(249,113,89,0.45);
+}
+.main-results-col .col-md-4:nth-of-type(2)::before {
+	background-color: #386fa4;
+	-webkit-box-shadow: -4px 0px 10px 0px rgba(65,168,207,0.45);
+	-moz-box-shadow: -4px 0px 10px 0px rgba(65,168,207,0.45);
+	box-shadow: -4px 0px 10px 0px rgba(65,168,207,0.45);
+}
+.main-results-col .col-md-4:nth-of-type(3)::before {
+	background-color: #ddf472;
+	-webkit-box-shadow: -4px 0px 10px 0px rgba(69,105,144,0.45);
+	-moz-box-shadow: -4px 0px 10px 0px rgba(69,105,144,0.45);
+	box-shadow: -4px 0px 10px 0px rgba(69,105,144,0.45);
+}
+.inner-result {
+	/* margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 40px;
+	padding-right: 0;
+	padding-bottom: 15px;
+	padding-top: 30px; */
+	padding: 1rem !important;
+	width: 200px;
+	-webkit-box-shadow: 6px 6px 6px 3px rgba(0,0,0,0.23);
+	-moz-box-shadow: 6px 6px 6px 3px rgba(0,0,0,0.23);
+	box-shadow: 6px 6px 6px 3px rgba(0,0,0,0.23);
+	border-radius: 8px;
+	background: -moz-linear-gradient(top, rgba(153,153,153,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(153,153,153,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(153,153,153,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00999999', endColorstr='#ffffff',GradientType=0 );
+}
+.inner-result h3 {
+	font-weight: 700;
+}
+
+.inner-mortgage-payments {
+	padding-left: 15px;
+	-webkit-box-shadow: 3px 6px 6px 0px rgba(0,0,0,0.23);
+	-moz-box-shadow: 3px 6px 6px 0px rgba(0,0,0,0.23);
+	box-shadow: 3px 6px 6px 0px rgba(0,0,0,0.23);
+	border-radius: 8px;
+	background: -moz-linear-gradient(top, rgba(153,153,153,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(153,153,153,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(153,153,153,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00999999', endColorstr='#ffffff',GradientType=0 );
+}
+
+.mortgage-payments-col .col-lg-12 {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	transition: background-color 0.15s ease-in-out, padding-left 0.3s ease-in-out;
+}
+
+.mortgage-payments-col .col-lg-12 h5 {
+	font-weight: 700;
+	transition: color 0.3s ease-in-out;
+}
+
+.mortgage-payments-col .col-lg-12 .color::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 3px;
+}
+
+.mortgage-payments-col .col-lg-12 p {
+	padding-left: 10px;
+	transition: color 0.3s ease-in-out;
+}
+
+.mortgage-payments-col .col-lg-12 p::before {
+	content: "";
+	position: absolute;
+	top: 16px;
+	left: 15px;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	transition: left 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.mortgage-payments-col .col-lg-12 .color {
+	position: absolute;
+	height: 100%;
+	width: 0;
+	top: 0;
+	left: 0;
+	transition: width 0.2s ease-in-out;
+}
+
+.mortgage-payments-col .col-lg-12:nth-of-type(1) .color,
+.mortgage-payments-col .col-lg-12:nth-of-type(1) .color::before,
+.mortgage-payments-col .col-lg-12:nth-of-type(1) p::before {
+	background-color: #386fa4;
+	-webkit-box-shadow: -4px 0px 10px 0px rgba(65,168,207,0.45);
+	-moz-box-shadow: -4px 0px 10px 0px rgba(65,168,207,0.45);
+	box-shadow: -4px 0px 10px 0px rgba(65,168,207,0.45);
+	border-radius: 8px;
+}
+
+.mortgage-payments-col .col-lg-12:nth-of-type(2) .color,
+.mortgage-payments-col .col-lg-12:nth-of-type(2) .color::before,
+.mortgage-payments-col .col-lg-12:nth-of-type(2) p::before {
+	background-color: #ff9e80;
+	-webkit-box-shadow: -4px 0px 10px 0px rgba(249,113,89,0.45);
+	-moz-box-shadow: -4px 0px 10px 0px rgba(249,113,89,0.45);
+	box-shadow: -4px 0px 10px 0px rgba(249,113,89,0.45);
+}
+
+.mortgage-payments-col .col-lg-12:nth-of-type(3) .color,
+.mortgage-payments-col .col-lg-12:nth-of-type(3) .color::before,
+.mortgage-payments-col .col-lg-12:nth-of-type(3) p::before {
+	background-color: #d7e5e5;
+	-webkit-box-shadow: -4px 0px 10px 0px rgba(191,163,137,1);
+	-moz-box-shadow: -4px 0px 10px 0px rgba(191,163,137,1);
+	box-shadow: -4px 0px 10px 0px rgba(191,163,137,1);
+}
+
+.mortgage-payments-col .col-lg-12:nth-of-type(4) .color,
+.mortgage-payments-col .col-lg-12:nth-of-type(4) .color::before,
+.mortgage-payments-col .col-lg-12:nth-of-type(4) p::before {
+	background-color: #ddf472;
+	-webkit-box-shadow: -4px 0px 10px 0px rgba(69,105,144,0.45);
+	-moz-box-shadow: -4px 0px 10px 0px rgba(69,105,144,0.45);
+	box-shadow: -4px 0px 10px 0px rgba(69,105,144,0.45);
+}
+
+.mortgage-payments-col .col-lg-12:nth-of-type(1).active {
+	background-color: #386fa4;
+}
+.mortgage-payments-col .col-lg-12:nth-of-type(2).active {
+	background-color: #ff9e80;
+}
+.mortgage-payments-col .col-lg-12:nth-of-type(3).active {
+	background-color: #d7e5e5;
+}
+.mortgage-payments-col .col-lg-12:nth-of-type(4).active {
+	background-color: #ddf472;
+}
+
+.mortgage-payments-col .col-lg-12.active {
+	padding-left: 25px;
+}
+
+.mortgage-payments-col .col-lg-12.active h5 {
+	color: #fff;
+}
+
+.mortgage-payments-col .col-lg-12.active p {
+	color: #fff;
+}
+
+.mortgage-payments-col .col-lg-12.active p::before {
+	content: "";
+	position: absolute;
+	top: 16px;
+	left: 25px;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+/**/
+
+.results-col p.dti-heading {
+	font-size: 14px;
+}
+
+tspan {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.tip {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.tip .row {
+	background-color: #beccf1;
+	border-radius: 8px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	position: relative;
+	overflow: hidden;
+	-webkit-box-shadow: 3px 6px 6px 0px rgba(0,0,0,0.23);
+	-moz-box-shadow: 3px 6px 6px 0px rgba(0,0,0,0.23);
+	box-shadow: 3px 6px 6px 0px rgba(0,0,0,0.23);
+}
+
+.tip .row::before {
+	content: url(../img/q.png);
+	position: absolute;
+	top: -20px;
+	right: 15px;
+}
+
+.tip .row::after {
+	content: url(../img/q2.png);
+	position: absolute;
+	bottom: -18px;
+	left: 0;
+}
+
+.tip .row .col-lg-12 div {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.tip .row h5 {
+	font-weight: 500;
+	color: #0d5178;
+	margin-bottom: 0;
+}
+
+.tip .row p {
+	color: #fff;
+	font-size: 14px;
+}
+
+.initial-col {
+	padding-bottom: 60px;
+}
+
+.initial-col img {
+	position:relative;
+	top: 0;
+	transition: top 0.15s ease-in-out;
+}
+
+.initial-col a:hover img {
+	top: -10px;
+}
+
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+select:active, 
+select:focus
+{
+   border-color: rgb(247, 85, 56) !important;
+}
+
+#mortgagechart {
+	margin-left:auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+/* Zillow */
+#zillow .property p,
+#zillow .property .row div {
+	margin: 0;
+	padding-top: 5px;
+	font-size: 14px;
+	
+}
+
+#zillow .property .property_img {
+	width: 100%;
+}
+
+.sale-col h3 {
+	position: relative;
+	font-size: 20px;
+	font-weight: bold;
+	color: rgb(247, 85, 56);
+	margin: 0px 0 0 0;
+	padding: 30px 0;
+}
+
+.sale-col h3#arrows::after {
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	content:'';
+    display: inline-block;
+	width:0;
+	height:0;
+	border:20px solid transparent;
+    vertical-align: middle;
+}
+
+.sale-col h3#arrows::after {
+	border-top-color: rgb(247, 85, 56);
+}
+
+.sale-col h3#arrows::before {
+	position: absolute;
+	left: 0;
+	top: -20px;
+	content:'';
+    display: inline-block;
+	width:0;
+	height:0;
+	border:20px solid transparent;
+    vertical-align: middle;
+}
+
+.sale-col h3#arrows::before {
+	border-bottom-color: rgb(247, 85, 56);
+}
+
+[data-tip] {
+	position:relative;
+
+}
+[data-tip]:before {
+	content:'';
+	/* hides the tooltip when not hovered */
+	display:none;
+	content:'';
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid rgb(247, 85, 56);	
+	position:absolute;
+	top: 46px;
+    left: 90px;
+	z-index:8;
+	font-size:0;
+	line-height:0;
+	width:0;
+	height:0;
+}
+[data-tip]:after {
+	display:none;
+	content:attr(data-tip);
+	position:absolute;
+	top:53px;
+	left:50px;
+	padding:4px 8px;
+	background:rgb(247, 85, 56);
+	color:#fff;
+	z-index:9;
+	font-size: 0.75em;
+	height:25px;
+	line-height:18px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	white-space:nowrap;
+	word-wrap:normal;
+}
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+	display:block;
+}
+.btn.btn-new{
+	text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    width: 100%;
+    padding: 20px 20px;
+	margin: 20px 0px;
+	background-color: #ff9e80;
+
+}
+.btn.btn-new:hover{
+	background-color: #b71c1c;
+}
+
+a.btn.btn-new{
+	box-shadow: 0px 6px 6px 0px rgb(0 0 0 / 23%);
+}
+
+.prim-col{
+	color:#ff9e80 !important;
+}
+
+#mortgagechart > svg > path{
+	stroke-width: 1 !important;
+}
